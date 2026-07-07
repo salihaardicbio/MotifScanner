@@ -1,0 +1,22 @@
+# config.yaml
+
+scoring:
+  matrix: BLOSUM80
+
+  weights:
+    blosum: 0.34
+    property: 0.33
+    exact: 0.33
+
+motif:
+  pseudocount: 0.001
+
+scanner:
+  minimum_average_score: 0.4
+  top_hits: null
+
+report:
+  prefix: motif_scan
+
+logging:
+  level: INFO

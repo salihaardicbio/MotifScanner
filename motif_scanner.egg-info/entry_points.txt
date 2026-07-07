@@ -1,0 +1,2 @@
+[console_scripts]
+motif-scanner = motif_scanner.main:main

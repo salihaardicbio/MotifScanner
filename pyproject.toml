@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "motif-scanner"
+version = "1.0.0"
+description = "A protein motif scanner using BLOSUM80, physicochemical similarity, and conservation-weighted scoring."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+authors = [
+    {name = "Saliha Ardıç"}
+]
+
+keywords = [
+    "bioinformatics",
+    "protein",
+    "motif",
+    "sequence-analysis",
+    "blosum",
+    "protein-scanning"
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+dependencies = [
+    "biopython>=1.83",
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "PyYAML>=6.0",
+    "tqdm>=4.66",
+    "openpyxl>=3.1"
+]
+
+[project.scripts]
+motif-scanner = "motif_scanner.main:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+motif_scanner = [
+    "*.csv",
+    "*.yaml"
+]
+
