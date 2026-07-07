@@ -54,8 +54,6 @@ MotifScanner/
 │   ├── amino_acid_properties.py   # Loads and normalizes aa_properties.csv
 │   ├── multi_motif.py             # Scans a database against several motifs at once (any lengths)
 │   └── aa_properties.csv          # Amino acid physicochemical descriptor table
-├── tests/                         # Unit tests
-├── examples/                      # Example motif and database FASTA files
 ├── config.yaml                    # Default scoring weights, matrix, logging, etc.
 ├── requirements.txt
 ├── pyproject.toml
